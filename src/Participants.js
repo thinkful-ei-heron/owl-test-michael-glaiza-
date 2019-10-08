@@ -1,15 +1,19 @@
 import React, { Component } from 'react'
-
+import ParticipantList from './ParticipantList'
 
 export class Participants extends Component {
-
-
     render() {
-        return this.props.Participants.map((participantList) => (
-            
-        ));
+        return (
+            <div>
+                
+            <ParticipantList allParticipant={this.props.participants}/>
+           
+            </div>
+        )
     }
 }
 
 export default Participants
+
+
 
