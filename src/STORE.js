@@ -14,7 +14,7 @@ const STORE = {
             avatar:
                 'https://robohash.org/doloredolorescupiditate.jpg?size=200x200&set=set1',
             inSession: true,
-            onStage: false
+            onStage: true
         },
         {
             id: 3,
@@ -40,7 +40,7 @@ const STORE = {
             onStage: true
         }
     ],
-    
+
     chatEvents: [
         {
             participantId: 3,
