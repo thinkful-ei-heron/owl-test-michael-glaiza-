@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './ChatMsg.css'
 
 // {
 //   participantId: 3,
@@ -41,11 +42,15 @@ export class ChatMsg extends Component {
     }
 
     return (
-      <div className="chat-msg">
-        <img src={participant.avatar} alt="avatar" />
-        <span className='msg-name'>{participant.name}</span>
-        <span className='timestamp'>{timeString}</span>
-        <span className={actionType}>{messageContent}</span>
+      <div className={"chat-msg " + actionType}>
+        <img className = 'chat-avatar' src={participant.avatar} alt="avatar" />
+        <div className='msg-body'>
+          <div className='msg-header'>
+            <span className='msg-name'>{participant.name}</span>
+            <span className='timestamp'>{timeString}</span>
+          </div>
+          <span className={actionType}>{messageContent}</span>
+        </div>
       </div>
     )
   }

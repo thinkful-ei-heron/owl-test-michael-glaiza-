@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import StageParticipant from './StageParticipant';
-
+import './Stage.css';
 
 export class Stage extends Component {
   render() {

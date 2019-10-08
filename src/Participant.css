@@ -1,5 +1,6 @@
 .avatar {
-  height: 20px;
+  height: 30px;
+  width: auto;
   border-radius: 50%;
 }
 
@@ -9,27 +10,24 @@
 }
 
 .status {
-  padding-left: 2rem;
+  padding-left: 20px;
+}
+
+.status::before {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  content: " ";
+  position: absolute;
+  top: 25px;
+  left: 5px;
 }
 
 .online::before {
   background-color: green;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  content: " ";
-  position: absolute;
-  top: 10px;
-  left: 0px;
+
 }
 
 .offline::before {
   background-color: grey;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  content: " ";
-  position: absolute;
-  top: 10px;
-  left: 0px;
 }

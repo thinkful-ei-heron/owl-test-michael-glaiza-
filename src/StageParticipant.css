@@ -1,0 +1,17 @@
+.stage-section {
+  text-align: center;
+}
+
+.stage.name {
+  display: inline-block;
+
+}
+
+.volume-bar {
+  content: " ";
+  width: 100px;
+  height: 3px;
+  background-color: red;
+  display: block;
+  margin: .5rem auto;
+}

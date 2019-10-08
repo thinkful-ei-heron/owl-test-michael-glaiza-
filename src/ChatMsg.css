@@ -1,0 +1,26 @@
+.chat-avatar {
+  height: 30px;
+  border-radius: 50%;
+}
+
+.chat-msg {
+  display: flex;
+}
+.msg-name {
+  font-weight: bold;
+  margin-right: .3rem;
+}
+
+.chat-msg.action {
+  text-align: center;
+}
+
+.chat-msg.action * {
+  font-weight: normal;
+  color: grey;
+  display: inline;
+}
+.chat-msg.action img,
+.chat-msg.action .timestamp {
+  display: none;
+}

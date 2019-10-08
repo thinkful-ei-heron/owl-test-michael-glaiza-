@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ('./StageParticipant.css')
 
 export class StageParticipant extends Component {
   render() {

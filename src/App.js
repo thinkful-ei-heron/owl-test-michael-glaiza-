@@ -8,7 +8,7 @@ import './App.css';
 export class App extends Component {
 
   render() {
-    let participantCount = STORE.participants.reduce((acc, cur) => cur.onStage ? ++acc : acc, 0);
+    let participantCount = STORE.participants.length;
     return (
         <div className="app">
           <div className="left">
@@ -20,7 +20,6 @@ export class App extends Component {
             </div>
             <ParticipantList participants = {STORE.participants} />
             <Chat chatlog = {STORE.chatEvents} participants = {STORE.participants}/>
-            <div className="chat dummy sidebar" id="chat">some chat here</div>
           </div>
           <Stage participants = {STORE.participants} />
 
